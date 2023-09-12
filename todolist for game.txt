@@ -1,0 +1,22 @@
+make muzzle flash animation
+set button hovers for the game over screen to 50% opacity (currently 100% completely solid)
+player can have more then 1 boost at a time but lower boost drop rate
+bullet fires from the characters direction not the mouse location angle
+set different bullet sprites for each bullet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
