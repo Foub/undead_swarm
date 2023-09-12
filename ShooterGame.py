@@ -504,7 +504,6 @@ class ShooterGame(pygame.sprite.Sprite):
             for enemy in self.waves.enemies_list:
                 if enemy.dead == False: # This enemy is alive
                     enemies_group.add(enemy)
-                    pygame.draw.rect(window, (255, 0, 0), enemy.collision_rect)
                 else: # This enemy is dead but the blood effects aren't done yet
                     blood_group.append(enemy)
 
@@ -862,10 +861,6 @@ while this.running:
         this.UpdateGameMenu()
     elif this.wave_done_menu == True:
         this.UpdateEndWaveMenu(event)
-
-    if this.character.weapon.knife_attack_timer > 0:
-        # Draw the square hitbox on the screen
-        pygame.draw.rect(window, (255, 0, 0), this.character.weapon.knife_hitbox)
 
     this.EscapeCooldownTimer()
     this.UpdateMuzzle()
